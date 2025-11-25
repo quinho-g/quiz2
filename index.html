@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <title>Rafaela Pires</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">  
+    </head>    
+    <body>
+    <!-- Este código é protegido pelos direitos altorais, não deve ser usado e nem copiado sem a altorização do altor.-->
+    <section id="inicio">
+        <div class="img-inicio">
+            <i class="fa-solid fa-cat i1"></i>
+            <i class="fa-solid fa-music i2"></i>
+            <img src="logo.png" alt="">
+        </div>
+        <div class="texto">
+            <h1>Rafaela Pires</h1>
+            <h2>Meu grande <span>amor</span> mia e gosta de caçar rato, muitos o chamam de Tom, mas o nome dele é <span>Gal</span>!</h2>
+        </div>
+    </section>
+    <h2 class="titulo">Meus links</h2>
+    <section id="links">
+        <a href="">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+        </a>
+        <a href="">
+            <i class="fab fa-tiktok"></i>
+            <h3>Tiktok</h3>
+        </a>
+        <a href="">
+            <i class="fab fa-discord"></i>
+            <h3>Minha comunidade</h3>
+        </a>
+        <a href="">
+            <i class="fa-solid fa-book"></i>
+            <h3>Album de artes</h3>
+        </a>
+    </section>
+    <h2 class="titulo">Gostos e conteúdos</h2>
+    <section id="destaques">
+        <div>
+            <i class="fa-solid fa-pen"></i>
+            <h3>Desenhar</h3>
+            <p>Umas das coisas que eu mais gosto de fazer é desenhar, seja lá um desenho comum, um retrato ou uma coisa aleatória, se tem um lápis na minha mão, eu tô feliz!</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-book"></i>
+            <h3>Ler</h3>
+            <p>O meu maior passatempo e ler um bom livro e tomando um café, são duas coisas que não podem faltar no meu dia, sem substituição.</p>
+        </div>
+    </section>
+    <section id="quiz">
+        <h2 id="soma">0/5</h2>
+        <h2 id="coment">Você acha que me conhece?</h2>
+        <div class="perguntas" id="pergunta1">
+            <h3>Qual é a minha proteína favorita?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta1','pergunta2')">Ovo frito</div>
+                <div onclick="quiz('pergunta1','pergunta2')">Peito de frango</div>
+                <div onclick="quiz('pergunta1','pergunta2')">Salmão</div>
+                <div onclick="quiz('pergunta1','pergunta2'), certo()">Carne vermelha</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta2">
+            <h3>Para qual time eu torço?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta2','pergunta3'), certo()">São Paulo</div>
+                <div onclick="quiz('pergunta2','pergunta3')">Corinthians</div>
+                <div onclick="quiz('pergunta2','pergunta3')">Palmeiras</div>
+                <div onclick="quiz('pergunta2','pergunta3')">Bota Fogo</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta3">
+            <h3>Qual é meu filme favorito?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta3','pergunta4')">Tropa de Elite</div>
+                <div onclick="quiz('pergunta3','pergunta4'), certo()">O Mentiroso</div>
+                <div onclick="quiz('pergunta3','pergunta4')">Pimentinha</div>
+                <div onclick="quiz('pergunta3','pergunta4')">Ted</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta4">
+            <h3>Para onde eu iria?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta4','pergunta5')">Praia</div>
+                <div onclick="quiz('pergunta4','pergunta5')">Parque de diverções</div>
+                <div onclick="quiz('pergunta4','pergunta5'), certo()">Cinema</div>
+                <div onclick="quiz('pergunta4','pergunta5')">Academia</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta5">
+            <h3>Qual desses é o melhor?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta5','fim'), acabou()">Sorvete</div>
+                <div onclick="quiz('pergunta5','fim'), acabou()">Cachorro quente</div>
+                <div onclick="quiz('pergunta5','fim'), certo(), acabou()">Pizza</div>
+                <div onclick="quiz('pergunta5','fim'), acabou()">Churrasco</div>
+            </div>
+        </div>
+        <div class="final" id="fim">
+            <div class="finaliza">
+                <img src="logo.png" alt="">
+                <h2 id="texto-fim">Nossa você não acertou nada, não me conhece muito bem!</h2>
+            </div>
+        </div>
+    </section>
+    <footer>&reg; Copyright - Marcos antonio. Todos os direitos reservados.</footer>
+    <script src="script.js"></script>
+    </body>
+</html>
