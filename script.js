@@ -15,13 +15,13 @@ function certo() {
     contagem++
     soma.innerText = `${contagem}/5`
     if(contagem >= 1) {
-        text.innerText = `Você consegui acertar ${contagem}, continue tentando!`
+        text.innerText = `Você conseguiu acertar ${contagem}, continue tentando!`
     }
     if(contagem ==4) {
-        text.innerText = `Você consegui acertar ${contagem}, faltou só uma!`
+        text.innerText = `Você conseguiu acertar ${contagem}, faltou só uma!`
     }
     if(contagem == 5) {
-        text.innerText = `Você consegui acertar todas as ${contagem}, você realmente me conhece!`
+        text.innerText = `Você conseguiu acertar todas as ${contagem}, você realmente me conhece!`
     }
 }
 function acabou() {
